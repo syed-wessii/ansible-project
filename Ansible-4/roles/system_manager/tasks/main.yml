@@ -1,0 +1,60 @@
+---
+# Software management
+- name: Install required software packages
+  ansible.builtin.apt:
+    name: "{{ system_manager_packages }}"
+    state: present
+    update_cache: true
+    cache_valid_time: 3600
+  become: true
+  tags:
+    - software
+
+# User management
+- name: Manage system users
+  ansible.builtin.user:
+    name: "{{ item.name }}"
+    shell: "{{ item.shell }}"
+    create_home: "{{ item.create_home }}"
+    state: present
+  loop: "{{ system_manager_users }}"
+  become: true
+  tags:
+    - users
+
+# Git repository management
+- name: Manage Git repositories
+  ansible.builtin.git:
+    repo: "{{ item.repo }}"
+    dest: "{{ item.dest }}"
+    version: "{{ item.version }}"
+    update: true
+  loop: "{{ system_manager_git_repositories }}"
+  become: true
+  tags:
+    - git
+
+# Directory management
+- name: Create required directory structure
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    owner: root
+    group: root
+    mode: "0755"
+  loop: "{{ system_manager_directories }}"
+  become: true
+  tags:
+    - directories
+
+# Additional system setting
+- name: Configure system MOTD
+  ansible.builtin.copy:
+    content: "{{ system_manager_motd }}\n"
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: "0644"
+  become: true
+  tags:
+    - system

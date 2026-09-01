@@ -1,0 +1,31 @@
+---
+# Software packages to install
+system_manager_packages:
+  - git
+  - curl
+  - vim
+  - unzip
+
+# Users to manage
+system_manager_users:
+  - name: ansibleuser
+    shell: /bin/bash
+    create_home: true
+
+# Git repositories to manage
+system_manager_git_repositories:
+  - repo: https://github.com/ansible/ansible-examples.git
+    dest: /opt/ansible-examples
+    version: master
+
+# Directory structure to manage
+system_manager_directories:
+  - /opt/system_manager
+  - /opt/system_manager/bin
+  - /opt/system_manager/config
+  - /opt/system_manager/data
+  - /opt/system_manager/logs
+  - /opt/system_manager/tmp
+
+# System-specific setting
+system_manager_motd: "System managed by Ansible"
