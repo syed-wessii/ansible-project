@@ -1,0 +1,7 @@
+---
+- name: Configure systems using system_manager role
+  hosts: managed_nodes
+  become: true
+
+  roles:
+    - system_manager
