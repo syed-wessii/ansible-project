@@ -48,6 +48,8 @@ echo "9  -> $(./assignment3b.sh 9)"
 echo "10 -> $(./assignment3b.sh 10)"
 echo "7  -> $(./assignment3b.sh 7)"
 ```
+<img width="1065" height="865" alt="image" src="https://github.com/user-attachments/assets/86865b74-265e-4807-96c9-074ba866dbeb" />
+
 
 
 
