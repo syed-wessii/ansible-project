@@ -1,0 +1,94 @@
+#!/bin/bash
+
+# Define our main variables
+command=$1
+file=$2
+
+# Safety check: Ensure the target file exists before trying to edit it
+if [ ! -f "$file" ]; then
+    echo "[ERROR] File '$file' does not exist."
+    exit 1
+fi
+
+# The Router: Directs the script based on the command provided
+case "$command" in
+    addLineTop)
+        line=$3
+        # '1i' tells sed to insert at line 1
+        sed -i "1i $line" "$file"
+        echo "Success: Added line to the top."
+        ;;
+
+    addLineBottom)
+        line=$3
+        # Standard bash redirection to append to the bottom
+        echo "$line" >> "$file"
+        echo "Success: Added line to the bottom."
+        ;;
+
+    addLineAt)
+        lineno=$3
+        line=$4
+        # '${lineno}i' tells sed to insert at the specific line number
+        sed -i "${lineno}i $line" "$file"
+        echo "Success: Added line at position $lineno."
+        ;;
+
+    updateFirstWord)
+        word=$3
+        word2=$4
+        # '0,/' replaces only the very first occurrence in the entire file
+        sed -i "0,/$word/s//$word2/" "$file"
+        echo "Success: Updated the first instance of '$word' to '$word2'."
+        ;;
+
+    updateAllWords)
+        word=$3
+        word2=$4
+        # The 'g' flag replaces it globally everywhere in the file
+        sed -i "s/$word/$word2/g" "$file"
+        echo "Success: Updated all instances of '$word' to '$word2'."
+        ;;
+
+    insertWord)
+        word1=$3
+        word2=$4
+        insert_word=$5
+        # Finds "word1 word2" and injects the new word directly between them
+        sed -i "s/$word1 $word2/$word1 $insert_word $word2/g" "$file"
+        echo "Success: Inserted '$insert_word' between '$word1' and '$word2'."
+        ;;
+
+    deleteLine)
+        lineno=$3
+        # 'd' tells sed to delete that specific line number
+        sed -i "${lineno}d" "$file"
+        echo "Success: Deleted line $lineno."
+        ;;
+
+    deleteLineWord)
+        word=$3
+        # Deletes any line that contains the target word
+        sed -i "/$word/d" "$file"
+        echo "Success: Deleted all lines containing '$word'."
+        ;;
+
+    # --- CUSTOM FEATURES ---
+
+    backupFile)
+        # Creates a safe backup copy of the file before you make risky edits
+        cp "$file" "${file}.bak"
+        echo "Success: Created backup at ${file}.bak"
+        ;;
+
+    emptyFile)
+        # Completely clears all contents of the file without deleting the file itself
+        > "$file"
+        echo "Success: Emptied all contents of '$file'."
+        ;;
+
+    *)
+        echo "[ERROR] Command '$command' is not recognized."
+        echo "Available commands: addLineTop, addLineBottom, addLineAt, updateFirstWord, updateAllWords, insertWord, deleteLine, deleteLineWord, backupFile, emptyFile."
+        ;;
+esac

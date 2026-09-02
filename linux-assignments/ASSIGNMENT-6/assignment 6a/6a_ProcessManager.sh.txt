@@ -1,0 +1,80 @@
+#!/bin/bash
+
+command=$1
+
+case "$command" in
+    topProcess)
+        n=$2
+        resource=$3
+
+        if [ "$resource" == "memory" ]; then
+            echo "Top $n processes by Memory:"
+
+            ps -eo pid,user,%mem,%cpu,comm --sort=-%mem | head -n $((n + 1))
+        elif [ "$resource" == "cpu" ]; then
+            echo "Top $n processes by CPU:"
+
+            ps -eo pid,user,%mem,%cpu,comm --sort=-%cpu | head -n $((n + 1))
+        else
+            echo "[ERROR] Invalid resource. Use 'memory' or 'cpu'."
+        fi
+        ;;
+
+    killLeastPriorityProcess)
+
+        target_pid=$(ps -eo pid,ni --no-headers | sort -k2 -n -r | head -n 1 | awk '{print $1}')
+        echo "Killing process $target_pid with the lowest priority..."
+        kill -9 "$target_pid"
+        echo "Process terminated."
+        ;;
+
+    RunningDurationProcess)
+
+        target=$2
+        echo "Checking running duration for: $target"
+
+
+        if [[ "$target" =~ ^[0-9]+$ ]]; then
+            ps -p "$target" -o pid,etime,comm
+        else
+
+            ps -eo pid,etime,comm | grep -i "$target"
+        fi
+        ;;
+
+    listOrphanProcess)
+        echo "Listing Orphan Processes (Processes where Parent PID is 1):"
+
+        ps -eo pid,ppid,stat,comm | awk 'NR==1 || $2 == 1'
+        ;;
+
+    listZoombieProcess)
+        echo "Listing Zombie Processes:"
+
+        ps -eo pid,ppid,stat,comm | awk 'NR==1 || $3 ~ /^Z/'
+        ;;
+
+    killProcess)
+        target=$2
+
+        if [[ "$target" =~ ^[0-9]+$ ]]; then
+            echo "Killing process ID: $target"
+            kill -9 "$target"
+        else
+            echo "Killing all processes matching name: $target"
+            pkill -9 -f "$target"
+        fi
+        echo "Termination signal sent."
+        ;;
+
+    ListWaitingProcess)
+        echo "Listing Processes waiting for resources (Uninterruptible Sleep):"
+
+        ps -eo pid,ppid,stat,comm | awk 'NR==1 || $3 ~ /^D/'
+        ;;
+
+    *)
+        echo "[ERROR] Command '$command' is not recognized."
+        echo "Available commands: topProcess, killLeastPriorityProcess, RunningDurationProcess, listOrphanProcess, listZoombieProcess, killProcess, ListWaitingProcess."
+        ;;
+esac

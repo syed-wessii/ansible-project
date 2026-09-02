@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# Assignment 7D - Git Commit Report
+
+usage() {
+    echo "Usage:"
+    echo "./assignment7d.sh -u <repo_url> -d <days>"
+    exit 1
+}
+
+REPO_URL=""
+DAYS=""
+
+while getopts "u:d:" option
+do
+    case "$option" in
+        u)
+            REPO_URL="$OPTARG"
+            ;;
+        d)
+            DAYS="$OPTARG"
+            ;;
+        *)
+            usage
+            ;;
+    esac
+done
+
+# Validate inputs
+if [ -z "$REPO_URL" ] || [ -z "$DAYS" ]; then
+    usage
+fi
+
+if ! [[ "$DAYS" =~ ^[0-9]+$ ]]; then
+    echo "[ERROR] Days must be a number."
+    exit 1
+fi
+
+# Create temporary directory
+TEMP_DIR=$(mktemp -d)
+
+# Cleanup temporary directory when script exits
+trap 'rm -rf "$TEMP_DIR"' EXIT
+
+echo "Cloning repository..."
+
+git clone -q "$REPO_URL" "$TEMP_DIR/repo"
+
+if [ $? -ne 0 ]; then
+    echo "[ERROR] Failed to clone repository."
+    exit 1
+fi
+
+cd "$TEMP_DIR/repo" || exit 1
+
+# Report file
+REPORT="git_commit_report.csv"
+
+# CSV Header
+echo "Commit ID,Author Name,Author Email,Commit Message,Changed Files,Valid" > "$REPORT"
+
+# Generate commit report
+git log --since="${DAYS} days ago" --format="%H|%an|%ae|%s" | while IFS='|' read -r COMMIT_ID AUTHOR EMAIL MESSAGE
+do
+
+    # Get changed files
+    FILES=$(git diff-tree --no-commit-id --name-only -r "$COMMIT_ID" | tr '\n' ';')
+
+    # Check JIRA pattern
+    if [[ "$MESSAGE" =~ ^JIRA-[0-9]+: ]]; then
+        VALID="Yes"
+    else
+        VALID="No"
+    fi
+
+    # Escape double quotes for CSV
+    MESSAGE="${MESSAGE//\"/\"\"}"
+    FILES="${FILES//\"/\"\"}"
+
+    echo "\"$COMMIT_ID\",\"$AUTHOR\",\"$EMAIL\",\"$MESSAGE\",\"$FILES\",\"$VALID\"" >> "$REPORT"
+
+done
+
+# Copy report to the directory from which script was executed
+OUTPUT_PATH="$(pwd -P)/$REPORT"
+
+cp "$REPORT" "$OLDPWD/$REPORT"
+
+echo ""
+echo "======================================"
+echo "Git Commit Report Generated"
+echo "======================================"
+echo "Repository : $REPO_URL"
+echo "Days       : $DAYS"
+echo "Report     : $OLDPWD/$REPORT"
+echo "======================================"
