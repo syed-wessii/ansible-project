@@ -40,19 +40,10 @@ The script should print all required star patterns without errors.
 
 
 ### 1. File Verification
-_Add terminal screenshot here._
+<img width="1065" height="565" alt="image" src="https://github.com/user-attachments/assets/d4b79d74-6cf4-4620-b2e8-20ae948e371d" />
+
 
 ### 2. Script Contents
-_Add terminal screenshot here._
+<img width="795" height="1470" alt="image" src="https://github.com/user-attachments/assets/ffc678c7-8bd9-47cc-97ee-ab5e67f5229c" />
 
-### 3. Syntax Verification
-_Add terminal screenshot here._
 
-### 4. Execute Permission
-_Add terminal screenshot here._
-
-### 5. Script Output
-_Add terminal screenshot here._
-
-## Result
-Assignment 3A was successfully implemented and verified using Bash.
