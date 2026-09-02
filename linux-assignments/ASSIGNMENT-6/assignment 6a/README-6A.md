@@ -26,8 +26,9 @@ Create a Bash utility for common Linux process-management operations.
 ```text
 ./assignment6a.sh topProcess 10 cpu
 ```
+<img width="1035" height="411" alt="image" src="https://github.com/user-attachments/assets/56fd70c6-0fd5-4715-9041-91c02a0e9ef3" />
 
-<img width="1035" height="411" alt="image" src="https://github.com/user-attachments/assets/a29537cb-2098-4f47-ac3c-42f2bdbbc26b" />
+
 
 ### 3. Kill Lowest-Priority Process
 
