@@ -31,6 +31,8 @@ sleep 3
 ps -p $PID -o pid,ni,stat,comm
 cat ~/assignment6c.log
 ```
+<img width="1035" height="642" alt="image" src="https://github.com/user-attachments/assets/efa2c711-75b2-4602-9d3f-67dedc188781" />
+
 
 ## 2. Clear the Log
 
@@ -42,6 +44,8 @@ ls -lh ~/assignment6c.log
 sleep 3
 cat ~/assignment6c.log
 ```
+<img width="1035" height="295" alt="image" src="https://github.com/user-attachments/assets/a3ce18e2-ecce-42c8-a560-74ae5cdcd240" />
+
 
 The file contents are cleared, but the running process continues writing new entries.
 
@@ -53,6 +57,8 @@ rm ~/assignment6c.log
 ls -l ~/assignment6c.log
 ps -p $PID -o pid,ni,stat,comm
 ```
+<img width="1035" height="295" alt="image" src="https://github.com/user-attachments/assets/61bbfdee-5dd4-4eee-bd7f-7ef641a3aeb5" />
+
 
 The process continues running even though the log filename has been deleted.
 
@@ -61,6 +67,8 @@ The process continues running even though the log filename has been deleted.
 ```bash
 ls -l /proc/$PID/fd | grep deleted
 ```
+<img width="1035" height="158" alt="image" src="https://github.com/user-attachments/assets/af07612e-e099-4dfa-ac24-715a9524f8cc" />
+
 
 A result containing:
 
@@ -85,6 +93,9 @@ sudo renice -n -5 -p $PID
 ```
 
 Verify:
+<img width="1035" height="325" alt="image" src="https://github.com/user-attachments/assets/000d2886-e068-4918-ac74-565ad474b4e3" />
+<img width="1035" height="99" alt="image" src="https://github.com/user-attachments/assets/0ede17b1-1758-43d8-94a2-47ad38d27497" />
+
 
 ```bash
 ps -p $PID -o pid,ni,stat,comm
