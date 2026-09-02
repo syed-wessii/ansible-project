@@ -71,6 +71,7 @@ which otssh
 ## Usage
 
 ### 1. Add an SSH connection
+<img width="975" height="127" alt="image" src="https://github.com/user-attachments/assets/49c2328b-e96d-42d9-9abd-d0b22d6f0ce8" />
 
 Add a connection using the default SSH port 22:
 
@@ -91,6 +92,7 @@ Add a connection using a private SSH key:
 ```
 
 ### 2. List connections
+<img width="975" height="152" alt="image" src="https://github.com/user-attachments/assets/785c9f37-76da-4f17-a35f-3bb2ee98ddb9" />
 
 ```bash
 ./otssh ls
@@ -105,6 +107,7 @@ server3
 ```
 
 ### 3. Display detailed connections
+<img width="975" height="146" alt="image" src="https://github.com/user-attachments/assets/f1a927db-f80f-43a2-b002-6ca903eae575" />
 
 ```bash
 ./otssh ls -d
@@ -119,6 +122,7 @@ server3: ssh -i /home/syed/.ssh/id_rsa -p 2022 ubuntu@192.168.46.34
 ```
 
 ### 4. Update a connection
+<img width="975" height="139" alt="image" src="https://github.com/user-attachments/assets/16a3751f-7b19-4962-97a8-fcc0e8ae6e21" />
 
 The update operation uses `-U`:
 
@@ -133,6 +137,7 @@ Verify the updated connection:
 ```
 
 ### 5. Delete a connection
+<img width="975" height="212" alt="image" src="https://github.com/user-attachments/assets/b416f92b-4de6-46b6-8d3f-2c5025a765dd" />
 
 ```bash
 ./otssh rm server3
@@ -145,6 +150,7 @@ Verify:
 ```
 
 ### 6. Connect to a saved server
+<img width="975" height="325" alt="image" src="https://github.com/user-attachments/assets/36e3eef4-d347-4d06-a581-34235f1e736d" />
 
 Use the saved connection name:
 
@@ -204,6 +210,7 @@ The database is automatically created when the script runs.
 | `./otssh NAME` | Connect to saved server |
 
 ## Error Handling
+<img width="975" height="94" alt="image" src="https://github.com/user-attachments/assets/b8038365-cec6-448b-adf7-86d69a9eef01" />
 
 The utility checks for invalid or incomplete operations.
 
