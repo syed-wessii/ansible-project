@@ -1,0 +1,9 @@
+#!/bin/bash
+
+exec >> "$HOME/assignment6c.log" 2>&1
+
+while true
+do
+    echo "Process is running at $(date)"
+    sleep 2
+done
