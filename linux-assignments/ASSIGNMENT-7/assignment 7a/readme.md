@@ -80,3 +80,27 @@ The assignment successfully demonstrates:
 * Ours and theirs concepts
 * Merge commit creation
 * Ninja branch changes overriding master branch changes
+
+Screenshot 1 – Git status and branches
+<img width="900" height="702" alt="image" src="https://github.com/user-attachments/assets/c6a18028-5227-44e5-afe3-bdd87cb0ca7b" />
+
+Screenshot 2 – ninja folder and README content
+<img width="900" height="75" alt="image" src="https://github.com/user-attachments/assets/66c9fe0e-ac3b-4a6e-81ea-1d17c0f347b9" />
+
+Screenshot 3 – All branches
+<img width="900" height="38" alt="image" src="https://github.com/user-attachments/assets/9d653aff-86f5-4125-8459-758ad2458225" />
+
+Screenshot 4 – Ninja branch commits
+<img width="900" height="302" alt="image" src="https://github.com/user-attachments/assets/6dc14ccb-6a55-40c0-b143-39035a269e8d" />
+
+Screenshot 5 – Master branch commits
+<img width="900" height="109" alt="image" src="https://github.com/user-attachments/assets/cba56c7b-0cf4-4513-8400-695422d65871" />
+
+Screenshot 6 – Complete Git history
+<img width="900" height="68" alt="image" src="https://github.com/user-attachments/assets/f12ee59a-9ca2-4452-a154-bb7ec5bb6468" />
+
+
+
+
+
+
