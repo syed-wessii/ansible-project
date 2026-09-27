@@ -19,23 +19,51 @@ Nine dummy jobs were created:
 -   Developer: `dev-1`, `dev-2`, `dev-3`
 -   Testing: `test-1`, `test-2`, `test-3`
 -   DevOps: `devops-1`, `devops-2`, `devops-3`
+<img width="1919" height="574" alt="image" src="https://github.com/user-attachments/assets/f0a56f14-a033-4dba-94d2-b7063fbf66e5" />
+
+<img width="1919" height="552" alt="image" src="https://github.com/user-attachments/assets/2fd303e1-64a1-4ad0-b642-305fd152a372" />
+
+<img width="1919" height="576" alt="image" src="https://github.com/user-attachments/assets/86faf4d3-45a2-42ee-8201-ce7c570a11ab" />
+
+
 
 ### Users
 
 **Developer** - `developer-1` - `developer-2` - Access to Developer
 jobs - Build, Configure, Workspace permissions
 
+<img width="1918" height="568" alt="image" src="https://github.com/user-attachments/assets/3792100e-f82c-4da1-894f-f1040e3049c1" />
+
+<img width="1916" height="579" alt="image" src="https://github.com/user-attachments/assets/1c2cfa4e-2b50-4452-b5b7-e13cb6bb5fc6" />
+
+
+
 **Testing** - `testing-1` - `testing-2` - Access to Testing jobs and
 read access to Developer jobs - Build, Configure, Workspace permissions
 on Testing jobs
+
+<img width="1914" height="669" alt="image" src="https://github.com/user-attachments/assets/a634c376-063e-4876-a391-a4d154e4af57" />
+
+<img width="1918" height="572" alt="image" src="https://github.com/user-attachments/assets/c68aab14-5ad6-440e-9119-dd7cf6e10671" />
+
+
 
 **DevOps** - `devops-1` - `devops-2` - Access to DevOps jobs, plus read
 access to Developer and Testing jobs - Build, Configure, Workspace
 permissions on DevOps jobs
 
+<img width="1918" height="826" alt="image" src="https://github.com/user-attachments/assets/a060f7e3-763e-42f3-88b3-1c9a19221e46" />
+
+<img width="1919" height="600" alt="image" src="https://github.com/user-attachments/assets/7625de41-1466-45e5-96f1-6b6b599a7542" />
+
+
+
 **Administrator** - `admin-1` - Full Jenkins access
 
 ## Role-Based Authorization
+
+<img width="1919" height="600" alt="image" src="https://github.com/user-attachments/assets/9afc19b6-c352-40b7-bfdf-ca1ccd65e842" />
+
 
 The **Role-Based Strategy** plugin was used.
 
@@ -49,6 +77,9 @@ The **Role-Based Strategy** plugin was used.
   `test-read`   `^test-.*$`     Read
   `devops`      `^devops-.*$`   Build, Configure, Read, Workspace
 
+  <img width="1917" height="999" alt="image" src="https://github.com/user-attachments/assets/41931fcf-cd0f-4b0c-aa1e-d6d601e8560e" />
+
+
 ### Role Assignments
 
   User            Roles
@@ -59,6 +90,13 @@ The **Role-Based Strategy** plugin was used.
   `testing-2`     `testing`, `dev-read`
   `devops-1`      `devops`, `dev-read`, `test-read`
   `devops-2`      `devops`, `dev-read`, `test-read`
+
+<img width="1919" height="483" alt="image" src="https://github.com/user-attachments/assets/8577bcb5-9e53-40d8-a45a-a5817c79da78" />
+
+<img width="1919" height="495" alt="image" src="https://github.com/user-attachments/assets/83a8f495-c203-483f-a392-9147c992e585" />
+
+<img width="813" height="741" alt="image" src="https://github.com/user-attachments/assets/c518b6db-edc0-4353-b420-edca9705d9f7" />
+
 
 ## Verification
 
@@ -91,6 +129,12 @@ The account has the required permissions on DevOps jobs.
 # Part 2 --- Google SSO
 
 A Google Cloud project named **Jenkins-SSO** was created.
+
+<img width="813" height="741" alt="image" src="https://github.com/user-attachments/assets/f3dd8c94-b56d-4224-8fdf-704fcf16210b" />
+
+<img width="1909" height="991" alt="image" src="https://github.com/user-attachments/assets/ce0d6ad9-1410-4d60-b726-56ad6ca68ece" />
+
+
 
 A Web Application OAuth 2.0 client was created and configured with this
 authorized redirect URI:
