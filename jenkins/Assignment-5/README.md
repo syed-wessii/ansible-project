@@ -60,7 +60,8 @@ repository.
 
 **Verification Screenshot:**
 
-> **Screenshot 1 -- Code Checkout**
+<img width="1919" height="225" alt="image" src="https://github.com/user-attachments/assets/2d9a72d0-ccdf-46a9-b6f2-2d0fb82e81b0" />
+
 
 ```{=html}
 <!-- Insert screenshot here -->
@@ -77,11 +78,20 @@ The CI Checks stage runs three checks in parallel:
 -   **Code Quality**
 -   **Code Coverage**
 
+<img width="1919" height="291" alt="image" src="https://github.com/user-attachments/assets/ff18b0a4-aa26-4f50-8a0e-2de499af22d0" />
+
+
 #### Code Stability
+
+<img width="1918" height="1054" alt="image" src="https://github.com/user-attachments/assets/47ebde12-ab1f-4430-9b56-db790bfbd563" />
+
 
 Runs the Maven test/compilation checks required for code stability.
 
 #### Code Quality
+
+<img width="1910" height="1065" alt="image" src="https://github.com/user-attachments/assets/2f1b57c5-495b-47b3-aad4-b24d55ee97df" />
+
 
 Uses **SonarQube** for static code-quality analysis.
 
@@ -91,7 +101,8 @@ Uses **JaCoCo** to execute tests and generate the code-coverage report.
 
 **Verification Screenshot:**
 
-> **Screenshot 2 -- CI Checks (Parallel Execution)**
+<img width="1919" height="1057" alt="image" src="https://github.com/user-attachments/assets/8015200f-1a19-436f-af0f-1ba87ef27edb" />
+
 
 ```{=html}
 <!-- Insert screenshot here -->
@@ -105,13 +116,13 @@ Uses **JaCoCo** to execute tests and generate the code-coverage report.
 The pipeline generates the required reports after the CI checks are
 completed.
 
-**Verification Screenshot:**
+
 
 > **Screenshot 3 -- Generate Reports**
 
 ```{=html}
-<!-- Insert screenshot here -->
-```
+<img width="1914" height="339" alt="image" src="https://github.com/user-attachments/assets/d511f386-0e00-4aeb-8fc6-89d176c78338" />
+
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
@@ -131,8 +142,8 @@ mvn clean package -DskipTests
 > **Screenshot 4 -- Build Artifact**
 
 ```{=html}
-<!-- Insert screenshot here -->
-```
+<img width="1891" height="1051" alt="image" src="https://github.com/user-attachments/assets/c75f4548-0979-4f95-8dfd-1a0719f0fbdb" />
+
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
@@ -148,8 +159,8 @@ The pipeline pauses and waits for interactive input before continuing.
 > **Screenshot 5 -- Manual Approval**
 
 ```{=html}
-<!-- Insert screenshot here -->
-```
+<img width="1912" height="417" alt="image" src="https://github.com/user-attachments/assets/174b1046-23a9-4549-8552-d45916d0c89e" />
+
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
@@ -165,8 +176,8 @@ The pipeline also records fingerprints for the archived artifacts.
 > **Screenshot 6 -- Publish / Archive Artifacts**
 
 ```{=html}
-<!-- Insert screenshot here -->
-```
+<img width="1910" height="441" alt="image" src="https://github.com/user-attachments/assets/29bf02ef-5b26-4212-90e2-035accb6be57" />
+
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
@@ -187,8 +198,14 @@ The Slack notification is configured for the `#build-status` channel.
 > **Screenshot 7 -- Email and Slack Notifications**
 
 ```{=html}
-<!-- Insert screenshot here -->
-```
+<img width="1910" height="504" alt="image" src="https://github.com/user-attachments/assets/a7a00b42-597b-49b5-b1ea-1164a59044f4" />
+
+<img width="1642" height="346" alt="image" src="https://github.com/user-attachments/assets/f3593250-78fb-49a5-9abf-794311cb9ff4" />
+
+<img width="1919" height="752" alt="image" src="https://github.com/user-attachments/assets/a340358b-6d69-4575-b309-7254e9907cea" />
+
+
+
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
@@ -206,14 +223,6 @@ The Jenkins Coverage report provides an overview of:
 -   Package Coverage
 -   Coverage Trend
 
-**Verification Screenshot:**
-
-> **Screenshot 8 -- Coverage Report**
-
-```{=html}
-<!-- Insert screenshot here -->
-```
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -236,10 +245,8 @@ All stages completed successfully in the verified build.
 
 **Verification Screenshot:**
 
-> **Screenshot 9 -- Complete Pipeline Overview**
+<img width="1911" height="457" alt="image" src="https://github.com/user-attachments/assets/4c555d75-163b-4335-b5a2-28667a9f8fc3" />
 
-```{=html}
-<!-- Insert screenshot here -->
 ```
 `<br>`{=html}`<br>`{=html}`<br>`{=html}
 
