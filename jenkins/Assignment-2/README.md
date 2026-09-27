@@ -130,9 +130,13 @@ The account has the required permissions on DevOps jobs.
 
 A Google Cloud project named **Jenkins-SSO** was created.
 
-<img width="813" height="741" alt="image" src="https://github.com/user-attachments/assets/f3dd8c94-b56d-4224-8fdf-704fcf16210b" />
 
-<img width="1909" height="991" alt="image" src="https://github.com/user-attachments/assets/ce0d6ad9-1410-4d60-b726-56ad6ca68ece" />
+
+<img width="1919" height="1002" alt="image" src="https://github.com/user-attachments/assets/1cd43d0b-7c94-4d42-b610-5598d3f9298f" />
+
+<img width="1918" height="863" alt="image" src="https://github.com/user-attachments/assets/91a825f5-b287-4dbb-a29c-cf65c8f633e4" />
+
+
 
 
 
