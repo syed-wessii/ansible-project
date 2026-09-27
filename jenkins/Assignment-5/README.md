@@ -62,12 +62,6 @@ repository.
 
 <img width="1919" height="225" alt="image" src="https://github.com/user-attachments/assets/2d9a72d0-ccdf-46a9-b6f2-2d0fb82e81b0" />
 
-
-```{=html}
-<!-- Insert screenshot here -->
-```
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
-
 ------------------------------------------------------------------------
 
 ### 2. CI Checks
@@ -104,10 +98,6 @@ Uses **JaCoCo** to execute tests and generate the code-coverage report.
 <img width="1919" height="1057" alt="image" src="https://github.com/user-attachments/assets/8015200f-1a19-436f-af0f-1ba87ef27edb" />
 
 
-```{=html}
-<!-- Insert screenshot here -->
-```
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -120,10 +110,8 @@ completed.
 
 > **Screenshot 3 -- Generate Reports**
 
-```{=html}
 <img width="1914" height="339" alt="image" src="https://github.com/user-attachments/assets/d511f386-0e00-4aeb-8fc6-89d176c78338" />
 
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -141,10 +129,8 @@ mvn clean package -DskipTests
 
 > **Screenshot 4 -- Build Artifact**
 
-```{=html}
 <img width="1891" height="1051" alt="image" src="https://github.com/user-attachments/assets/c75f4548-0979-4f95-8dfd-1a0719f0fbdb" />
 
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -158,10 +144,8 @@ The pipeline pauses and waits for interactive input before continuing.
 
 > **Screenshot 5 -- Manual Approval**
 
-```{=html}
 <img width="1912" height="417" alt="image" src="https://github.com/user-attachments/assets/174b1046-23a9-4549-8552-d45916d0c89e" />
 
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -175,10 +159,8 @@ The pipeline also records fingerprints for the archived artifacts.
 
 > **Screenshot 6 -- Publish / Archive Artifacts**
 
-```{=html}
 <img width="1910" height="441" alt="image" src="https://github.com/user-attachments/assets/29bf02ef-5b26-4212-90e2-035accb6be57" />
 
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
