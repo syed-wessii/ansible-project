@@ -179,16 +179,13 @@ The Slack notification is configured for the `#build-status` channel.
 
 > **Screenshot 7 -- Email and Slack Notifications**
 
-```{=html}
+
 <img width="1910" height="504" alt="image" src="https://github.com/user-attachments/assets/a7a00b42-597b-49b5-b1ea-1164a59044f4" />
 
 <img width="1642" height="346" alt="image" src="https://github.com/user-attachments/assets/f3593250-78fb-49a5-9abf-794311cb9ff4" />
 
 <img width="1919" height="752" alt="image" src="https://github.com/user-attachments/assets/a340358b-6d69-4575-b309-7254e9907cea" />
 
-
-
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
@@ -229,8 +226,6 @@ All stages completed successfully in the verified build.
 
 <img width="1911" height="457" alt="image" src="https://github.com/user-attachments/assets/4c555d75-163b-4335-b5a2-28667a9f8fc3" />
 
-```
-`<br>`{=html}`<br>`{=html}`<br>`{=html}
 
 ------------------------------------------------------------------------
 
