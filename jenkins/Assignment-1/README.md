@@ -1,4 +1,4 @@
-# Jenkins Assignment 6
+# Jenkins Assignment 1
 
 ## Overview
 
@@ -24,15 +24,20 @@ A Jenkins job was created to automate the following Git operations:
 
 The Jenkins console output confirms successful branch creation, branch listing, changes, merge, and rebase.
 
-![Git Operations - Part 1](screenshots/part1_git_success_1.png)
+<img width="262" height="212" alt="image" src="https://github.com/user-attachments/assets/830807e8-7fca-4619-b5ef-aacedba46f97" />
+
 
 The remaining console output confirms the rebase, deletion of the `dev` branch, final branch list, and successful completion.
 
-![Git Operations - Part 1 Final](screenshots/part1_git_success_2.png)
+<img width="688" height="945" alt="image" src="https://github.com/user-attachments/assets/2082c633-3e44-4296-be2f-3e6e9b36d8aa" />
+
+<img width="613" height="986" alt="image" src="https://github.com/user-attachments/assets/8b96fc74-cf5c-48f3-99e4-2c8f12520b99" />
+
+
 
 ### Final Result
 
-```text
+```textq
 FINAL BRANCH LIST
 * master
   rebase-branch
@@ -51,7 +56,8 @@ Finished: SUCCESS
 
 The job accepts a string parameter named `NINJA_NAME` and allows `Job2_WebServer` to copy its archived artifacts.
 
-![Job 1 Configuration](screenshots/part2_job1_configuration.png)
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/a5b673f2-bd78-4065-bf34-1f0c12d1449a" />
+
 
 ### Job 1 Build
 
@@ -65,7 +71,8 @@ syed from DevOps Ninja
 
 The build also archives the file and automatically triggers `Job2_WebServer`.
 
-![Job 1 Console Output](screenshots/part2_job1_console.png)
+<img width="1919" height="887" alt="image" src="https://github.com/user-attachments/assets/827ab0e8-8631-4437-8053-0ff414c5908e" />
+
 
 ---
 
@@ -75,7 +82,8 @@ The build also archives the file and automatically triggers `Job2_WebServer`.
 
 It copies the archived `ninja.txt` artifact from `Job1_CreateFile`, verifies the file, and displays its contents.
 
-![Job 2 Console Output](screenshots/part2_job2_console.png)
+<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/e348256d-b969-4f29-a70b-388cd6904de9" />
+
 
 The console output confirms:
 
@@ -98,7 +106,7 @@ The generated `ninja.txt` file is published through the web server and is access
 http://localhost:8000/ninja.txt
 ```
 
-![Web Server Output](screenshots/part2_web_server.png)
+<img width="1919" height="262" alt="image" src="https://github.com/user-attachments/assets/e77c8285-89dd-4071-8391-52630925c583" />
 
 ---
 
@@ -110,13 +118,15 @@ Slack notifications were configured for the Jenkins jobs.
 
 The Slack `#build-status` channel shows successful notifications for both jobs.
 
-![Slack Success Notification](screenshots/part2_slack_success.png)
+<img width="1912" height="334" alt="image" src="https://github.com/user-attachments/assets/025b5c07-a8d3-4ec8-9ed1-fb61e75df216" />
+
 
 ## Failure Notification
 
 The Slack channel also received failure notifications from `Job2_WebServer` during the earlier artifact-copy permission issue.
 
-![Slack Failure Notification](screenshots/part2_slack_failure.png)
+<img width="1644" height="324" alt="image" src="https://github.com/user-attachments/assets/2f8a445d-f09c-4e03-b593-426acfacf82a" />
+
 
 This verifies that failure notifications are being sent when a Jenkins build fails.
 
