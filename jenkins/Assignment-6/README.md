@@ -45,7 +45,8 @@ The Jenkins Shared Library was configured with:
 
 ### Screenshot 1 – Jenkins Global Shared Library Configuration
 
-> **Insert screenshot here**
+<img width="1919" height="758" alt="Screenshot 2026-09-26 111958" src="https://github.com/user-attachments/assets/34a8992a-54fb-4be6-90a3-14e3f5771912" />
+
 
 ---
 
@@ -70,7 +71,9 @@ EMAIL_RECIPIENT=syedwessi06@gmail.com
 
 ### Screenshot 2 – Configuration File
 
-> **Insert screenshot here**
+<img width="819" height="895" alt="Screenshot 2026-09-26 113259" src="https://github.com/user-attachments/assets/5294e2dc-89f8-4b29-b927-1a638fabee9f" />
+
+<img width="960" height="372" alt="2026-09-26 15_38_12-_git token for Jenkins - Notepad" src="https://github.com/user-attachments/assets/4f8958fa-a19c-4bc9-9a36-a920355f06a6" />
 
 ---
 
@@ -93,7 +96,7 @@ A `post` section is used to send notifications after the pipeline execution.
 
 ### Screenshot 3 – Jenkinsfile
 
-> **Insert screenshot here**
+<img width="953" height="478" alt="2026-09-26 15_39_56-_git token for Jenkins - Notepad" src="https://github.com/user-attachments/assets/95ffe082-63f7-4d79-99c6-86c7dbd65387" />
 
 ---
 
@@ -116,6 +119,9 @@ sendNotification()
 ```
 
 The library reads the configuration file and uses the configured values during pipeline execution.
+<img width="960" height="388" alt="2026-09-26 15_35_02-_git token for Jenkins - Notepad" src="https://github.com/user-attachments/assets/3f236f7a-77b1-4d12-8af2-868435793eb7" />
+
+<img width="953" height="478" alt="2026-09-26 15_39_56-_git token for Jenkins - Notepad" src="https://github.com/user-attachments/assets/ff7a29ca-19b6-4544-8358-5ecc8120df68" />
 
 ---
 
@@ -141,6 +147,7 @@ The playbook is executed through Jenkins using:
 ```bash
 ansible-playbook -i hosts assignment6.yml
 ```
+<img width="946" height="466" alt="2026-09-26 15_53_55-Greenshot" src="https://github.com/user-attachments/assets/0bfcaf87-d158-46e5-858d-df9b2c441957" />
 
 ---
 
@@ -151,6 +158,8 @@ The pipeline checks:
 ```text
 KEEP_APPROVAL_STAGE=true
 ```
+<img width="1917" height="241" alt="image" src="https://github.com/user-attachments/assets/a55b6986-72b1-49bd-b3f9-15ff5c76a926" />
+
 
 When enabled, Jenkins pauses the pipeline and requests approval before executing the deployment.
 
@@ -175,7 +184,8 @@ Both servers returned successful Ansible results.
 
 ### Screenshot 4 – Successful Jenkins Console Output
 
-> **Insert screenshot here**
+<img width="1919" height="791" alt="image" src="https://github.com/user-attachments/assets/4842aae9-72f1-46be-aa31-0db3fe8a442c" />
+
 
 The console output should show:
 
@@ -210,11 +220,13 @@ An email notification is sent to the configured recipient.
 
 ### Screenshot 5 – Slack Notification
 
-> **Insert screenshot here**
+<img width="1896" height="189" alt="image" src="https://github.com/user-attachments/assets/724c81aa-a5f8-442d-9361-7da85178b939" />
+
 
 ### Screenshot 6 – Email Notification
 
-> **Insert screenshot here**
+<img width="1905" height="628" alt="image" src="https://github.com/user-attachments/assets/e5d0097b-5471-4550-ad4e-5d1ac5b6b06f" />
+
 
 ---
 
