@@ -84,13 +84,21 @@ The source code is then made available to the subsequent CI stages.
 
 > Add screenshot here.
 
-`![Code Checkout](screenshots/01-code-checkout.png)`
+<img width="1914" height="1004" alt="image" src="https://github.com/user-attachments/assets/a2804d68-12cb-4fa4-95b0-d5240fd076c0" />
+
 
 ------------------------------------------------------------------------
 
 ## 2. CI Checks
 
 The CI checks run in parallel to reduce overall pipeline execution time.
+
+<img width="1201" height="801" alt="image" src="https://github.com/user-attachments/assets/d1ce7eb3-1053-4872-a3d7-abc3123ae9e5" />
+
+<img width="1217" height="837" alt="image" src="https://github.com/user-attachments/assets/25297e18-20a5-433f-ac99-05b79ceb2f2e" />
+
+<img width="1234" height="943" alt="image" src="https://github.com/user-attachments/assets/b0694e0b-fd9f-4376-91d9-9f3380070301" />
+
 
 ### Code Stability
 
@@ -129,7 +137,8 @@ Coverage Plugin.
 
 > Add screenshot of the parallel CI configuration here.
 
-`![Parallel CI Checks](screenshots/02-parallel-ci-checks.png)`
+<img width="1914" height="993" alt="image" src="https://github.com/user-attachments/assets/efa35c25-927c-4884-9bb4-426f926838d9" />
+
 
 ------------------------------------------------------------------------
 
@@ -140,11 +149,7 @@ coverage reports.
 
 The JaCoCo report is recorded by Jenkins using the coverage parser.
 
-### Screenshot
 
-> Add screenshot here.
-
-`![Generate Reports](screenshots/03-generate-reports.png)`
 
 ------------------------------------------------------------------------
 
@@ -166,7 +171,8 @@ Spring3HibernateApp.war
 
 > Add screenshot here.
 
-`![Build Artifact](screenshots/04-build-artifact.png)`
+<img width="1919" height="469" alt="image" src="https://github.com/user-attachments/assets/bd27cd90-ecc6-4a3c-9a6b-756d0cb20586" />
+
 
 ------------------------------------------------------------------------
 
@@ -183,11 +189,7 @@ The user can:
 The successful pipeline execution used the approval option before
 publishing the artifact.
 
-### Screenshot
 
-> Add screenshot of the approval step here.
-
-`![Approval Stage](screenshots/05-approval.png)`
 
 ------------------------------------------------------------------------
 
@@ -213,7 +215,8 @@ Artifact published successfully
 
 > Add screenshot here.
 
-`![Publish Artifact](screenshots/06-publish-artifact.png)`
+<img width="1128" height="377" alt="image" src="https://github.com/user-attachments/assets/ed6f5e92-89c0-4297-824d-7dd86a264c17" />
+
 
 ------------------------------------------------------------------------
 
@@ -234,7 +237,8 @@ reported as **Passed**.
 
 > Add SonarQube dashboard screenshot here.
 
-`![SonarQube Dashboard](screenshots/07-sonarqube.png)`
+<img width="1919" height="716" alt="image" src="https://github.com/user-attachments/assets/2d494d2d-537e-4563-9b2e-59094fca59f0" />
+
 
 ------------------------------------------------------------------------
 
@@ -246,11 +250,6 @@ send notifications after the pipeline execution.
 Notifications are configured for successful and unsuccessful/aborted
 executions.
 
-### Screenshot
-
-> Add screenshot of the email notification configuration here.
-
-`![Email Notification](screenshots/08-email-notification.png)`
 
 ------------------------------------------------------------------------
 
@@ -280,7 +279,10 @@ Finished: SUCCESS
 > Add the Jenkins Stage View screenshot showing the successful pipeline
 > here.
 
-`![Jenkins Stage View](screenshots/09-stage-view.png)`
+<img width="1766" height="276" alt="image" src="https://github.com/user-attachments/assets/baac95ca-a4b3-4685-8665-7ed328d2f3bb" />
+
+<img width="1057" height="204" alt="image" src="https://github.com/user-attachments/assets/1c4bfbc1-5b9e-4c50-ba22-07560d44deb6" />
+
 
 ------------------------------------------------------------------------
 
