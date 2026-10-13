@@ -57,12 +57,6 @@ used two private subnets across two Availability Zones. A NAT Gateway
 provided outbound internet access for private instances during package
 installation and application setup.
 
-### Architecture Screenshot
-
-```{=html}
-<!-- Add your architecture diagram here. -->
-```
-![AWS Architecture Diagram](screenshots/architecture.png)
 
 ## AWS Resources and Configuration
 
@@ -166,70 +160,72 @@ below as needed.
 ```{=html}
 <!-- Screenshot: VPC details showing CIDR and subnets in two AZs. -->
 ```
-![VPC and Subnets](screenshots/vpc-subnets.png)
+<img width="1919" height="660" alt="image" src="https://github.com/user-attachments/assets/634624e2-3a89-4074-9651-b379d55f795a" />
+
+<img width="1919" height="660" alt="image" src="https://github.com/user-attachments/assets/fdd4e03f-d127-4f6a-8e31-36aef81d09e9" />
+
+
 
 #### 2. Route Tables and Gateways
 
 ```{=html}
 <!-- Screenshot: Public route to IGW and private route to NAT Gateway. -->
 ```
-![Route Tables and Gateways](screenshots/routes-gateways.png)
+<img width="1919" height="427" alt="image" src="https://github.com/user-attachments/assets/dfbaaec1-b546-4a83-8275-5b79f21b761a" />
+
+<img width="1919" height="640" alt="image" src="https://github.com/user-attachments/assets/60807e29-2321-4050-b058-f2f9c6d7b34b" />
+
+
 
 #### 3. Security Groups
 
 ```{=html}
 <!-- Screenshot: ALB inbound HTTP rule and EC2 port 8080 rule sourced from the ALB security group. -->
 ```
-![Security Groups](screenshots/security-groups.png)
+<img width="1918" height="715" alt="image" src="https://github.com/user-attachments/assets/59709cd9-6805-4ff0-9ceb-8ec664c9b941" />
+
 
 #### 4. Application Load Balancer
 
 ```{=html}
 <!-- Screenshot: ALB showing Active state and Internet-facing scheme. -->
 ```
-![Application Load Balancer](screenshots/alb.png)
+<img width="1919" height="883" alt="image" src="https://github.com/user-attachments/assets/99ead9a5-3de7-439f-b40c-8c1f258302fe" />
 
 #### 5. Target Group Health
 
 ```{=html}
 <!-- Screenshot: Target group showing healthy registered targets. -->
 ```
-![Target Group Health](screenshots/target-group-health.png)
+<img width="1526" height="569" alt="image" src="https://github.com/user-attachments/assets/b8cc1d9c-18ec-43e3-b328-d914f4098714" />
+
 
 #### 6. Launch Template
 
 ```{=html}
 <!-- Screenshot: Launch template details and the User Data configuration. -->
 ```
-![Launch Template](screenshots/launch-template.png)
+<img width="1919" height="756" alt="image" src="https://github.com/user-attachments/assets/2afbdd0a-6321-4d12-9bea-9beedaa0f531" />
+
 
 #### 7. Auto Scaling Group
 
 ```{=html}
 <!-- Screenshot: ASG showing desired capacity 2 and 2/2 healthy instances. -->
 ```
-![Auto Scaling Group](screenshots/asg-healthy.png)
+<img width="1916" height="714" alt="image" src="https://github.com/user-attachments/assets/855cdf5d-91ab-4e35-baa6-527bc5aaa13b" />
 
-#### 8. Instance Refresh
 
-```{=html}
-<!-- Screenshot: Instance refresh completed successfully and instances using the corrected template version. -->
-```
-![Instance Refresh](screenshots/instance-refresh.png)
 
-#### 9. Application in Browser
+#### 8. Application in Browser
 
 ```{=html}
 <!-- Screenshot: Application homepage opened using the ALB DNS name. -->
 ```
 ![Application Homepage](screenshots/application-homepage.png)
 
-#### 10. Cleanup Confirmation
+<img width="1919" height="519" alt="image" src="https://github.com/user-attachments/assets/cc0b6659-0329-4ea7-bf7d-c79ce702c12a" />
 
-```{=html}
-<!-- Screenshot: AWS console confirmation that the custom VPC and related resources were deleted. -->
-```
-![Resource Cleanup](screenshots/cleanup-confirmation.png)
 
 ## Challenges and Resolutions
 
