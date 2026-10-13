@@ -121,15 +121,16 @@ Add your screenshots to the repository (for example, in a folder named `screensh
 
 ### 1. EC2 Instances and Nginx Setup
 
-![EC2 instances and Nginx setup](screenshots/01-ec2-nginx.png)
+<img width="1772" height="887" alt="image" src="https://github.com/user-attachments/assets/a3c98e64-afdf-4b01-b21b-7399ae45b010" />
+
 
 ### 2. Nginx AMI — V1
 
-![Nginx AMI V1](screenshots/02-nginx-ami-v1.png)
+<img width="1773" height="887" alt="image" src="https://github.com/user-attachments/assets/5f1b6270-81e0-4b0e-bbe2-2dde69494036" />
 
 ### 3. Nginx AMI — V2
 
-![Nginx AMI V2](screenshots/03-nginx-ami-v2.png)
+<img width="1773" height="887" alt="image" src="https://github.com/user-attachments/assets/c0581722-6e2e-454e-9784-a8878b148b39" />
 
 ### 4. Application Load Balancer
 
@@ -137,11 +138,11 @@ Add your screenshots to the repository (for example, in a folder named `screensh
 
 ### 5. Auto Scaling Group and Healthy Instances
 
-![Auto Scaling Group](screenshots/05-asg-healthy-instances.png)
+<img width="1773" height="887" alt="image" src="https://github.com/user-attachments/assets/7def027d-52d7-4bbe-bb4d-b5bda11d4bdf" />
 
 ### 6. Auto Scaling Policies
 
-![CPU scaling policy](screenshots/06-scaling-policy-cpu.png)
+<img width="1768" height="890" alt="image" src="https://github.com/user-attachments/assets/105696dc-3351-4ad1-ba36-48e92e516b54" />
 
 ![Network scaling policy](screenshots/07-scaling-policy-network.png)
 
@@ -153,43 +154,11 @@ Add your screenshots to the repository (for example, in a folder named `screensh
 
 ### 8. V1/V2 Deployment and Rollback
 
-![Nginx V1 page](screenshots/10-nginx-v1-page.png)
+<img width="1773" height="887" alt="image" src="https://github.com/user-attachments/assets/231e4d1f-8fe9-418a-9e39-8d0e0f815285" />
 
-![Nginx V2 page](screenshots/11-nginx-v2-page.png)
+<img width="1771" height="888" alt="image" src="https://github.com/user-attachments/assets/756cbb07-69c8-407f-aa05-42f9a92dd180" />
 
-![Deployment rollback](screenshots/12-rollback.png)
 
-### 9. Website and S3 Images
-
-![Nginx website with S3 images](screenshots/13-website-s3-images.png)
-
-![S3 image objects](screenshots/14-s3-images.png)
-
-### 10. Auto Scaling Self-Healing
-
-![ASG instance replacement](screenshots/15-asg-self-healing.png)
-
-### 11. Bastion Host and Private Instances
-
-![Bastion host and private Nginx instances](screenshots/16-bastion-private-instances.png)
-
-### 12. ALB Path-Based Routing
-
-![Ninja1 route](screenshots/17-ninja1-route.png)
-
-![Ninja2 route](screenshots/18-ninja2-route.png)
-
-### 13. S3 IAM Policies
-
-![S3 prod and nonprod folders](screenshots/19-s3-prod-nonprod.png)
-
-![IAM and bucket policies](screenshots/20-iam-s3-policies.png)
-
-### 14. CloudFront
-
-![CloudFront distribution](screenshots/21-cloudfront-distribution.png)
-
-![Images delivered through CloudFront](screenshots/22-cloudfront-images.png)
 
 ## Validation Checklist
 
