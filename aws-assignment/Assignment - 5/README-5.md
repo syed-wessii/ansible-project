@@ -200,7 +200,8 @@ replaced with the actual screenshot files before pushing to GitHub.
 ```{=html}
 <!-- Add screenshot: screenshots/01-project-structure.png -->
 ```
-![Terraform project structure](screenshots/01-project-structure.png)
+<img width="1890" height="182" alt="image" src="https://github.com/user-attachments/assets/b0996733-1376-423f-9c3b-3f30cdb89fe0" />
+
 
 ### 2. Root Module Configuration
 
@@ -215,7 +216,11 @@ replaced with the actual screenshot files before pushing to GitHub.
 <!-- Add screenshot: screenshots/03-terraform-validate-plan.png -->
 ```
 ![Terraform validation and
-plan](screenshots/03-terraform-validate-plan.png)
+<img width="1914" height="83" alt="image" src="https://github.com/user-attachments/assets/8bcc02cc-5b06-4cd0-9f1a-0df57e6202fa" />
+
+<img width="1765" height="379" alt="image" src="https://github.com/user-attachments/assets/e60b5dbc-83f6-4674-83a3-41aedf111db8" />
+
+
 
 ### 4. Terraform Apply Result
 
@@ -231,36 +236,43 @@ plan](screenshots/03-terraform-validate-plan.png)
 ```
 ![Terraform state list and
 outputs](screenshots/05-state-list-outputs.png)
+<img width="1919" height="662" alt="image" src="https://github.com/user-attachments/assets/de9ddee7-c1ca-451d-b657-b4c23a25b05d" />
+
+<img width="1917" height="282" alt="image" src="https://github.com/user-attachments/assets/41dc4e9d-89f7-4bad-ad97-cf3e9e68705e" />
+
+<img width="1914" height="58" alt="image" src="https://github.com/user-attachments/assets/61869092-8852-493b-a404-42dc92bd1a3d" />
 
 ### 6. EC2 Instance --- AWS Console
 
 ```{=html}
 <!-- Add screenshot: screenshots/06-ec2-console.png -->
 ```
-![EC2 instance in the AWS Console](screenshots/06-ec2-console.png)
+<img width="1919" height="441" alt="image" src="https://github.com/user-attachments/assets/fa91017d-364a-46b3-b043-e6993073766d" />
+
+<img width="1647" height="266" alt="image" src="https://github.com/user-attachments/assets/852d6c00-9de4-4147-88eb-38ab8f961c27" />
+
+
 
 ### 7. S3 Remote State --- AWS Console
 
 ```{=html}
 <!-- Add screenshot: screenshots/07-s3-remote-state.png -->
 ```
-![Terraform state object in the S3
-bucket](screenshots/07-s3-remote-state.png)
+<img width="1919" height="596" alt="image" src="https://github.com/user-attachments/assets/9e9aade2-fb42-40e4-a48b-bfaffb923926" />
+
 
 ### 8. DynamoDB Lock Table --- AWS Console
 
 ```{=html}
 <!-- Add screenshot: screenshots/08-dynamodb-lock-table.png -->
 ```
-![DynamoDB lock table in the AWS
-Console](screenshots/08-dynamodb-lock-table.png)
+<img width="1919" height="476" alt="image" src="https://github.com/user-attachments/assets/f309ec5a-81d8-4bca-aa8f-25605956986b" />
 
-### 9. AWS CLI Verification
+<img width="1919" height="285" alt="image" src="https://github.com/user-attachments/assets/ebb5f543-645e-4f8c-909f-e5e59ea44e5d" />
 
-```{=html}
-<!-- Add screenshot: screenshots/09-aws-cli-verification.png -->
-```
-![AWS CLI verification](screenshots/09-aws-cli-verification.png)
+<img width="1647" height="266" alt="image" src="https://github.com/user-attachments/assets/e07f7c27-1841-4abf-8bee-36633b636950" />
+
+
 
 ## Key Learnings
 
