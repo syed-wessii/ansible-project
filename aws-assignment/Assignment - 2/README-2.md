@@ -64,15 +64,23 @@ Assignment 2 - Static Asset Test
 
 **1.1 EC2 instance and application deployment**
 
-![Recreate EC2 deployment](screenshots/recreate-ec2.png)
+<img width="1918" height="583" alt="image" src="https://github.com/user-attachments/assets/e80f1120-af3a-401a-b5a5-97c2341788aa" />
 
 **1.2 AMI available**
 
-![Recreate AMI](screenshots/recreate-ami.png)
+<img width="1915" height="961" alt="image" src="https://github.com/user-attachments/assets/53c0b3b1-8b8e-4c33-8d3c-62c8e642fdef" />
+
 
 **1.3 S3 static asset**
 
-![S3 static asset](screenshots/s3-static-asset.png)
+<img width="1919" height="467" alt="image" src="https://github.com/user-attachments/assets/1bb93d1b-7080-44ac-9313-decb0d8e6db8" />
+
+<img width="1919" height="418" alt="image" src="https://github.com/user-attachments/assets/670820f9-c91b-43d9-8ab3-f380186e9434" />
+
+<img width="1919" height="417" alt="image" src="https://github.com/user-attachments/assets/b156c846-f90f-4723-ac23-4688fbad3563" />
+
+
+
 
 **1.4 Application response**
 
@@ -107,13 +115,13 @@ Assignment 2 - Version 2
 
 ### Screenshots
 
-![Rolling ASG configuration](screenshots/rolling-asg.png)
+<img width="1919" height="740" alt="image" src="https://github.com/user-attachments/assets/39822807-0b9f-4d21-bd00-18a3bc7c901a" />
 
-![Rolling Launch Templates](screenshots/rolling-launch-templates.png)
 
-![Rolling Instance Refresh successful](screenshots/rolling-instance-refresh.png)
+<img width="1854" height="931" alt="image" src="https://github.com/user-attachments/assets/2036ae29-c312-42e5-9fef-c55dad293731" />
 
-![Rolling v2 application response](screenshots/rolling-v2-response.png)
+<img width="1919" height="534" alt="image" src="https://github.com/user-attachments/assets/a19b732f-4f85-45c6-a9a7-731896853f7b" />
+
 
 ---
 
@@ -153,15 +161,16 @@ The ALB was ultimately configured to send 100% of traffic to Green before cleanu
 
 ### Screenshots
 
-![Blue and Green environments](screenshots/blue-green-instances.png)
+<img width="1893" height="739" alt="image" src="https://github.com/user-attachments/assets/00115fbe-daf2-46d1-8b27-54188c738c87" />
 
-![Blue target group](screenshots/blue-target-group.png)
 
-![Green target group healthy](screenshots/green-target-group.png)
+<img width="1919" height="733" alt="image" src="https://github.com/user-attachments/assets/03132180-9c07-4a31-b755-8d036d38db30" />
 
-![ALB listener traffic switch](screenshots/blue-green-alb-switch.png)
+<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/45f6b9f0-7fa2-4a79-abb6-6da1e91c12df" />
 
-![ALB serving Green v2](screenshots/blue-green-v2-response.png)
+
+<img width="1699" height="115" alt="image" src="https://github.com/user-attachments/assets/ed5fea80-250c-41b5-ba8b-499701a0d54c" />
+
 
 ---
 
@@ -188,11 +197,10 @@ After the test, traffic was returned to **100% Green (v2)**.
 
 ### Screenshots
 
-![Canary weighted routing 90/10](screenshots/canary-weighted-routing.png)
+<img width="1261" height="583" alt="image" src="https://github.com/user-attachments/assets/66ab15b3-47cb-4797-a867-276d77e5ab04" />
 
-![Canary repeated HTTP requests](screenshots/canary-http-test.png)
+<img width="1368" height="679" alt="image" src="https://github.com/user-attachments/assets/30605756-6f72-45f1-8ce5-8fa3b563b17f" />
 
-![Canary final Green 100 percent](screenshots/canary-final-green.png)
 
 ---
 
@@ -233,13 +241,6 @@ The EC2 instance role `spring3-ec2-ssm-role` was used to provide AWS access with
 
 The bucket was versioned during the exercise. **The bucket has since been deleted as part of cleanup**, so the paths above document the original layout and are not currently available.
 
-### Screenshots
-
-![S3 artifacts](screenshots/s3-artifacts.png)
-
-![S3 assets](screenshots/s3-assets.png)
-
-![EC2 IAM role access to S3](screenshots/ec2-s3-access.png)
 
 ---
 
