@@ -158,27 +158,28 @@ paths below if you use different filenames.
 Shows the ALB DNS in the browser and the `Assignment 4 - Terraform`
 page.
 
-![Application through ALB](screenshots/01-application-alb.png)
+<img width="1914" height="604" alt="image" src="https://github.com/user-attachments/assets/e3577715-1910-4a2d-8df1-ec518bac552f" />
 
 ### 2. Terraform plan --- no changes
 
 Shows Terraform confirming that the deployed infrastructure matched the
 configuration.
 
-![Terraform plan with no changes](screenshots/02-terraform-plan.png)
+<img width="1710" height="839" alt="image" src="https://github.com/user-attachments/assets/a329a399-fccf-42b8-9115-5233124f3ce8" />
+
 
 ### 3. Terraform state stored in S3
 
 Shows `terraform.tfstate` listed in the S3 backend path.
 
-![Terraform state in S3](screenshots/03-s3-terraform-state.png)
+<img width="1708" height="102" alt="image" src="https://github.com/user-attachments/assets/4c4e1655-cdbe-484d-8049-eef9fa3ad720" />
 
 ### 4. Terraform destroy completed
 
 Shows the final cleanup result:
 `Destroy complete! Resources: 21 destroyed.`
 
-![Terraform destroy result](screenshots/04-terraform-destroy.png)
+<img width="1856" height="1041" alt="image" src="https://github.com/user-attachments/assets/0dc071fe-228d-4475-b024-e2466e5f757f" />
 
 ## Repository Structure
 
